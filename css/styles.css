@@ -1,0 +1,10 @@
+body, html { height: 100% }
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body,h1,h2,h3,h4,h5,h6 { font-family: "Lucida Sans", sans-serif; }
+
+.menu { display: none }

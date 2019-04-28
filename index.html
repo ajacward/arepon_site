@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>El Arepon Venezuelan Food</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/arepas.jpg">
+  </head>
+  <body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <img src="images/banner.png" alt="El Arepon">
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Arepas');" id="myLink">
+        <div class="w3-col s12 tablink w3-padding-large w3-hover-red">Arepas</div>
+      </a>
+    </div>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Empanadas');">
+          <div class="w3-col s12 tablink w3-padding-large w3-hover-red">Empanadas</div>
+        </a>
+    </div>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Sides');">
+          <div class="w3-col s5 tablink w3-padding-large w3-hover-red">Sides</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Dessert');">
+          <div class="w3-col s7 tablink w3-padding-large w3-hover-red">Dessert</div>
+        </a>
+    </div>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Beverages');">
+          <div class="w3-col s12 tablink w3-padding-large w3-hover-red">Beverages</div>
+        </a>
+    </div>
+
+    <noscript>Enable JavaScript to see the menu.</noscript>
+
+    <div id="Arepas" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Llanera</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$6</span></h1>
+      <p class="w3-text-grey">Chopped steak mixed with a fresh tomato salad and queso fresco.</p>
+      <hr>
+
+      <h1><b>Pabellon</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$6</span></h1>
+      <p class="w3-text-grey">Shredded beef, black beans, plantains, fried egg & cheese.</p>
+      <hr>
+
+      <h1><b>Reina Pepeada</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5</span></h1>
+      <p class="w3-text-grey">Shredded chicken mixed in a creamy avocado salad.</p>
+      <hr>
+
+      <h1><b>Carne Machada</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5</span></h1>
+      <p class="w3-text-grey">Shredded beef seasoned with homemade salsa.</p>
+      <hr>
+
+      <h1><b>Pelua</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">Our seasoned shredded beaf loaded with cheddar cheese.</p>
+      <hr>
+
+      <h1><b>La Catira</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">Our seasoned shredded beef loaded with shredded cheese.</p>
+      <hr>
+
+      <h1><b>Domino</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5</span></h1>
+      <p class="w3-text-grey">Cooked black beans with fresh white cheese.</p>
+      <hr>
+
+      <h1><b>HLT</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5</span></h1>
+      <p class="w3-text-grey">Smoke ham, lettuce, tomatoes and we can add cheese upon request.</p>
+      <hr>
+
+      <h1><b>Queso</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5</span></h1>
+      <p class="w3-text-grey">Mix fresh and mozzarella.</p>
+      <hr>
+
+      <h1><b>Carne Molida</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5</span></h1>
+      <p class="w3-text-grey">Ground beef seasoned with our homemade tomato salsa.</p>
+      <hr>
+
+      <h1><b>Pollo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5</span></h1>
+      <p class="w3-text-grey">Shredded chicken seasoned with our homemade tomato salsa.</p>
+      <hr>
+
+      <h1><b>Vegetariana</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5</span></h1>
+      <p class="w3-text-grey">Tomato avocado salad.</p>
+    </div>
+
+    <div id="Empanadas" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Cheese</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.50</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+      <h1><b>Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.50</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+      <h1><b>Ground Beef</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.50</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+      <h1><b>Carne Machada</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.50</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+      <h1><b>Ham</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.50</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+      <h1><b>Domino</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+      <h1><b>Ham and Cheese</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+      <h1><b>Pabellon</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4</span></h1>
+      <p class="w3-text-grey"></p>
+    </div>
+
+
+    <div id="Sides" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Platanos con queso</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+      <h1><b>Tequenos</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3</span></h1>
+      <p class="w3-text-grey"></p>
+    </div>
+
+
+    <div id="Dessert" class="w3-container menu w3-padding-32 w3-white">
+        <h1><b>Flan</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.50</span></h1>
+        <p class="w3-text-grey"></p>
+    </div>
+
+
+  <div id="Beverages" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Coca-Cola</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$1</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+      <h1><b>Diet Coke</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$1</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+      <h1><b>Sprite</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$1</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+      <h1><b>Dr. Pepper</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$1</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+      <h1><b>Frescolita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+      <h1><b>Sunkist</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$1</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+      <h1><b>Mountain Dew</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$1</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+      <h1><b>Water</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$1</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+      <h1><b>Parchita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+      <h1><b>Guaravana</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+      <h1><b>Maltas Polar</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.50</span></h1>
+      <p class="w3-text-grey"></p>
+    </div><br>
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>Our Venezuelan arepas are handmade the traditional way. The arepa is a corn based flat round “bread” that we make from scratch. It is a round patty that is grilled, baked or fried. Once fully cooked, it is split open and stuffed with our homemade signature ingredients. To enjoy our arepas in the way it was meant to be, YOU need to hold it in your hands and eat it like a sandwich. Below, you will find a few of our staple menu items; we can modify or combine ingredients. It may imply additional charge.</p>
+  </div>
+  <h1><b>Opening Hours</b></h1>
+
+  <div class="w3-row">
+    <div class="w3-col s6">
+      <p>Mon & Tue CLOSED</p>
+      <p>Wednesday 11.00 - 20.00</p>
+      <p>Thursday 11:00 - 20:00</p>
+    </div>
+    <div class="w3-col s6">
+      <p>Friday 11:00 - 20:00</p>
+      <p>Saturday 11:00 - 20:00</p>
+      <p>Sunday 11:00 - 20:00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="contact">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>885 S 72 Street ALDI parking lot. Omaha, Nebraska 68114</p>
+    <p>402-403-8146</p>
+    <a href="https://www.facebook.com/elareponomaha">facebook</a>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+</footer>
+
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
